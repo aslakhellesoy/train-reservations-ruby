@@ -1,8 +1,8 @@
 Given("the following train:") do |trains|
   trains.hashes.each do |coach_info|
     @booking_system.configure(
-      coach_info['seats'].to_i,
-      coach_info['booked'].to_i,
+      coach_info['total_seats'].to_i,
+      coach_info['booked_seats'].to_i,
     )
   end
 end

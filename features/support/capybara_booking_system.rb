@@ -3,8 +3,9 @@ class CapybaraBookingSystem
     @capybara = capybara
   end
   
-  def configure(seats, booked)
-    Capybara.app.settings.booking_system.configure(seats, booked)
+  def configure(total_seats, booked_seats)
+    booking_system = Capybara.app.settings.booking_system
+    booking_system.configure(total_seats, booked_seats)
   end
   
   def book_seats(seat_count)
