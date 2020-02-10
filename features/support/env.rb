@@ -9,8 +9,8 @@ if ENV['CAPYBARA']
     @booking_system = CapybaraBookingSystem.new(self)
   end
 else
-  require 'booking_system'
   Before do
+    require 'booking_system'
     @booking_system = BookingSystem.new
   end
 end

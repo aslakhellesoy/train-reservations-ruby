@@ -13,4 +13,9 @@ Cucumber::Rake::Task.new(:cucumber_capybara_webdriver) do |t|
   t.profile = 'capybara-webdriver'
 end
 
-task :default => [:spec, :cucumber, :cucumber_capybara, :cucumber_capybara_webdriver]
+task :default => [
+  :spec, 
+  :cucumber, 
+  # :cucumber_capybara, 
+  # :cucumber_capybara_webdriver
+]
