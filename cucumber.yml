@@ -1,0 +1,2 @@
+capybara: CAPYBARA=1
+capybara-webdriver: CAPYBARA=1 WEBDRIVER=1
