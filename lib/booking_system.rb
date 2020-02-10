@@ -5,7 +5,9 @@ class BookingSystem
   end
   
   def book_seats(seat_count)
-    ok = seat_count == 1
+    max_total_seats = @total_seats * 0.7
+    new_booked_seats = @booked_seats + seat_count 
+    ok = new_booked_seats <= max_total_seats
     return ok
   end
 end
